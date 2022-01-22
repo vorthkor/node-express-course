@@ -8,6 +8,14 @@ const mockUserData=[
     {name:'Mark'},
     {name:'Jill'}
 ]
+
+app.get('/', function(req,res){
+    res.json({
+        success: true,
+        message: 'welcome!!'
+    })
+})
+
 app.get('/users', function(req,res){
     res.json({
         success: true,
